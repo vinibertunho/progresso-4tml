@@ -42,3 +42,11 @@ h2{
     background-color: antiquewhite;
     border: 2px solid rgb(47, 138, 212);
 }
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-flex-end {
+    justify-content: flex-end;
+}
