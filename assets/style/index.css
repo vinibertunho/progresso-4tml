@@ -50,3 +50,11 @@ h2{
 .justify-flex-end {
     justify-content: flex-end;
 }
+
+.justify-column {
+    flex-direction: column;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
