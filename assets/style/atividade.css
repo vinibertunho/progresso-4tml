@@ -1,14 +1,34 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.retangulo {
+  width: 20%;
+  height: 200px;
+  background-color: rgb(19, 110, 172);
+  margin: 0 auto 20px;
+  margin-top: 50px;
 }
 
 
-.quadrado {
-    width: 20%;
-    height: 200px;
-    background-color: rgb(19, 110, 172);
-    margin: 0 auto 20px;
-    margin-top: 50px;
+.quadrados {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.um-quadrado {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(19, 110, 172);
+}
+
+.dois-quadrado {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(19, 201, 201);
 }
