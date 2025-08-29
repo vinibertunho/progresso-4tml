@@ -32,3 +32,31 @@
   height: 150px;
   background-color: rgb(19, 201, 201);
 }
+
+.bola {
+    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.b1 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(207, 17, 17);
+    border-radius: 500px;
+}
+.b2 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(238, 255, 1);
+    border-radius: 500px;
+}
+.b3 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(60, 255, 0);
+    border-radius: 500px;
+}
