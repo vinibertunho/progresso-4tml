@@ -33,13 +33,26 @@
   background-color: rgb(19, 201, 201);
 }
 
-.bola {
+.body{
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bola {
+    height: 600px;
+    width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 20px;
   flex-direction: column;
+  background-color: #333;
+  margin: 850px;
+  margin-top: 250px;
+  border-radius: 50px;
+  margin-bottom: 50px;
+ 
 }
 
 .b1 {
@@ -47,16 +60,19 @@
     height: 150px;
     background-color: rgb(207, 17, 17);
     border-radius: 500px;
+    box-shadow: 0 4px 10px #f00
 }
 .b2 {
     width: 150px;
     height: 150px;
     background-color: rgb(238, 255, 1);
     border-radius: 500px;
+    box-shadow: 0 4px 10px #ff0;
 }
 .b3 {
     width: 150px;
     height: 150px;
     background-color: rgb(60, 255, 0);
     border-radius: 500px;
+    box-shadow: 0 0 20px #0f0;
 }
