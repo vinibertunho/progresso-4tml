@@ -1,0 +1,171 @@
+/* Paleta de Cores */
+:root {
+    --sasuke-purple: #6B3FA0;
+    --itachi-red: #FF0000;
+    --madara-blue: #2F3E75;
+    --dark-gray: #1A1A1A;
+    --light-gray: #2C2C2C;
+    --text-light: #EDEDED;
+    --highlight: #FF9933; /* Laranja de Itachi */
+    --border-color: #6B3FA0; /* Cor roxa para bordas */
+  }
+  
+  /* Estilo geral do body */
+  body {
+    background-color: var(--dark-gray);
+    color: var(--text-light);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Formulário */
+  form {
+    background-color: var(--light-gray);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px var(--sasuke-purple);
+    max-width: 600px;
+    margin: auto;
+    border: 2px solid var(--sasuke-purple);
+    position: relative;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  /* Efeito de fade in no formulário */
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.9); }
+    100% { opacity: 1; transform: scale(1); }
+  }
+  
+  /* Labels e inputs */
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--itachi-red);
+    position: relative;
+  }
+  
+  /* Efeitos de hover em labels */
+  label:hover {
+    color: var(--highlight);
+    cursor: pointer;
+    text-shadow: 0 0 10px var(--sasuke-purple);
+    animation: pulse 0.5s ease-in-out infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 0.9; }
+    50% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.9; }
+  }
+  
+  /* Inputs e campos de formulário */
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: var(--dark-gray);
+    color: var(--text-light);
+    border: 1px solid var(--sasuke-purple);
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Efeitos ao passar o mouse nos campos */
+  input[type="email"]:hover,
+  select:hover,
+  textarea:hover {
+    background-color: var(--light-gray);
+    border-color: var(--itachi-red);
+  }
+  
+  /* Efeito de foco nos inputs */
+  input[type="email"]:focus,
+  select:focus,
+  textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px var(--sasuke-purple);
+    border-color: var(--madara-blue);
+  }
+  
+  /* Rádio buttons e checkboxes */
+  input[type="radio"],
+  input[type="checkbox"] {
+    accent-color: var(--itachi-red);
+    margin-right: 10px;
+    transform: scale(1.2);
+  }
+  
+  input[type="radio"]:hover,
+  input[type="checkbox"]:hover {
+    transform: scale(1.3);
+  }
+  
+  /* Efeitos no botão de submit */
+  button {
+    background-color: var(--sasuke-purple);
+    color: var(--text-light);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Efeito de hover no botão */
+  button:hover {
+    background-color: var(--itachi-red);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--itachi-red);
+  }
+  
+  /* Animando a área de descrição */
+  textarea {
+    resize: none;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  textarea:focus {
+    transform: scale(1.02);
+    border-color: var(--madara-blue);
+    box-shadow: 0 0 10px var(--madara-blue);
+  }
+  
+  /* Adicionando animação de corvos */
+  body::before {
+    content: '';
+    background: url('https://upload.wikimedia.org/wikipedia/commons/d/d6/Sharingan_triple.svg') no-repeat center;
+    background-size: 100px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: spin 10s linear infinite;
+    opacity: 0.2;
+    z-index: -1;
+  }
+  
+  /* Animação de rotação do Sharingan */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Ajustes em dispositivos pequenos */
+  @media screen and (max-width: 600px) {
+    form {
+      padding: 20px;
+    }
+    label, input, textarea {
+      font-size: 14px;
+    }
+  }
+  
